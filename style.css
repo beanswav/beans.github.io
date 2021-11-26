@@ -1,7 +1,7 @@
 body, html{	
 	width: 100%;
 	height: 100%;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Playfair Display', serif;
 	background: url(https://wallpapercave.com/wp/yrNTvLo.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
  	 -moz-background-size: cover;
@@ -11,14 +11,14 @@ body, html{
 
 h1 {
 	font-size: 4rem;
-	color: ghostwhite;
+	color: #FCF3F0;
 	text-shadow: 2px 2px 2px #000000;
 }
 
 hr  {
   display: block;
   margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 2.5em;
   margin-left: auto;
   margin-right: auto;
   border-style: solid;
@@ -28,6 +28,14 @@ hr  {
   opacity: 100%;
 }
 
+.animate__animated.animate__bounce{
+	--animate-duration: 6s;
+}
+
+.animate__animated.animate__fadeIn{
+	--animate-duration: 3s;
+}
+
 .buffer {
 	height: 10rem;
 }
@@ -35,7 +43,6 @@ hr  {
 .btn {
 	font-weight: bold;
 	color: white;
-	text-transform: uppercase;
 	background-color: #b784a7;
 }
 
@@ -43,6 +50,8 @@ hr  {
 	border-radius: 10px 100px / 120px;
 	background-color: #b784a7;
 	border-color: #b784a7;
+	animation: bounce;
+	animation-duration: 10s;
 }
 
 .btn-primary:hover {
