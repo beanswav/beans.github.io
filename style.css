@@ -10,6 +10,8 @@ body, html{
 }
 
 h1 {
+	margin-left: auto;
+	margin-right: auto;
 	font-size: 4rem;
 	color: #FCF3F0;
 	text-shadow: 2px 2px 2px #000000;
@@ -26,6 +28,12 @@ hr  {
   border-color: #b784a7;
   max-width: 77px;
   opacity: 100%;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .animate__animated.animate__bounce{
